@@ -1,0 +1,110 @@
+/*menu-bar*/
+.menue-bar{
+    background-color: rgb(117,117,212);
+    width: 54px;
+    height: 54px;
+    border-radius: 0px;
+    position: relative;
+    display: block;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+.point{
+    background-color:red;
+}
+
+
+
+.menue-bar:hover{
+    cursor: pointer;
+    background-color: rgb(255, 89, 89);
+}
+
+
+.menue-bar span{
+    background-color:white;
+    width: 25px;
+    height: 3px;
+    display:block;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: absolute;
+}
+
+
+.b1{
+    top: 14px;
+    left: 14px;
+    display: block;
+}
+
+.b2{
+    top: 24px;
+    left: 14px;
+    display: block;
+}
+
+.b3{
+    top: 34px;
+    left: 14px;
+    display: block;
+}
+
+
+.active1{
+    width: 30px;
+    transform: translateY(10px) rotate(135deg);
+    transition: all 0.6s;
+}
+
+.active2{
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.active3{
+    width: 30px;
+    transform: translateY(-10px) rotate(225deg);
+    transition: all 0.6s;
+}
+
+/*nav*/
+
+.nav-ul{
+    text-align: center;
+    margin:100px;
+}
+
+.nav-ul li{
+    height: 20vh;
+    text-shadow: 2px 2px black;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.nav-ul p{
+    font-size: 10px;
+    color: white;
+}
+
+nav{
+    position: fixed;
+    top: -120%;
+    width: 100%;
+    transition: all 0.5s;
+    background-color:rgba(0,0,0, 0.7);
+    height: 100vh;
+    z-index: 999;
+}
+
+nav.active-nav{
+    top: 0;
+}
+
+.nav-ul span{
+    color: white;
+}
