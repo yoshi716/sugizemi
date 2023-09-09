@@ -62,7 +62,7 @@ $(document).ready(function(){
     $('.fa-book-bookmark').click(function(){
         $('html,body').animate({
             'scrollTop':0
-        },400)
+        },200)
     });
 
     $('.head-nav').click(function(){
@@ -70,7 +70,7 @@ $(document).ready(function(){
         var position = $(id).offset().top;
         $('html,body').animate({
             'scrollTop':position
-        },400); 
+        },200); 
     });
 
     $('.footer-left').click(function(){
